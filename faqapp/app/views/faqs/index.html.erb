@@ -1,0 +1,11 @@
+<h1>FAQs</h1>
+
+<ul id="faqs">
+<% @faqs.each do |faq| %>
+  <%= content_tag_for :li, faq do %>
+    <%= link_to h(faq.question), faq %>
+  <% end %>
+<% end %>
+</ul>
+
+<p><%= link_to "New FAQ", new_faq_path %></p>
