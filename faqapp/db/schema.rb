@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111013153917) do
+ActiveRecord::Schema.define(:version => 20120911190130) do
 
   create_table "faqs", :force => true do |t|
     t.text     "question"
     t.text     "answer"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "position"
   end
 
 end
